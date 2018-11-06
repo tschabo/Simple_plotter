@@ -11,7 +11,6 @@ nema17_mount_hole_r = 3.5/2;
 nema17_mount_holes_spacing = 31.2;
 mount_width = nema17_width+3;
 
-// print two same pieces
 //x_end();
 
 

@@ -1,4 +1,3 @@
-// file with helpful modules only
 module screw_hole(dia,depth, nut_holes)
 {
 cylinder(r=dia/2, h=depth, $fn=8);

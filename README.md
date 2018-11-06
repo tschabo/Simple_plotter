@@ -4,6 +4,8 @@ Use [OpenScad](www.openscad.org/) to compile end export STL models for printing.
 File `assembly.scad` contains all parts assembled together for preview.
 When opening file individually, uncomment single function call in the beginning of the file to render this particular part.
 
+![preview](preview.jpeg)
+
 Bill of non-printable materials:
 
 - 2x stepper motor, flange nema17 

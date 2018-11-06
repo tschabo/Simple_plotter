@@ -17,7 +17,7 @@ module y_end2()
         translate([0,-block_width/2, 0]) 
         {   
             for(mul = [-1,1])
-            translate([(belt_bearing_dia/2+1)*mul,rods_r+block_width/2+1,wall_tickness])
+            translate([(belt_bearing_dia/2+1)*mul,rods_r+block_width/2-1,wall_tickness])
             {
                 //groove round
                 translate([mul*1,0,-wall_tickness])rotate([-90,0,0]) 
@@ -25,7 +25,7 @@ module y_end2()
                 //cube([4,4,wall_tickness]);
                 //cube([belt_bearing_dia+10, belt_width*2, wall_tickness*2],center=true);
                 rotate([0,90,90]) scale([1,1.3*mul,1])
-                    belting("straight",belt_profile, belt_length = 50, belting_width = belt_width );
+                    belting("straight",belt_profile, belt_length = 50, belting_width = belt_width+2 );
             }
             //tool mount screw holes
             for(mul = [1,-1])
